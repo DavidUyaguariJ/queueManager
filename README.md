@@ -22,5 +22,5 @@ Funcionan como un almacenamiento intermedio que guarda mensajes de forma tempora
 ##**Enterprice:**  
 
 
-![IBM MQ]([https://ejemplo.com/imagen.png](https://www.cleo.com/solutions/integration-connectors/ibm-mq))
+![IBM MQ](https://www.cleo.com/sites/default/files/styles/desktop_664_394_scale/public/2023-12/ibm-mq-integration.png.webp?itok=N1UJAOh-)
 
