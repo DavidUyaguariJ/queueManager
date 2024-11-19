@@ -27,7 +27,7 @@ Microsoft Azure Service Bus
 
 IBM MQ
 
-![IBM MQ](https://www.cleo.com/sites/default/files/styles/desktop_664_394_scale/public/2023-12/ibm-mq-integration.png.webp?itok=N1UJAOh-)
+![IBM MQ](https://opensourceguruji.com/wp-content/uploads/2022/08/IBM-MQ.png)
 
 Amazon SQS (Simple Queue Service)
 
