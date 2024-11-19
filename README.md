@@ -23,7 +23,7 @@ Funcionan como un almacenamiento intermedio que guarda mensajes de forma tempora
 
 Microsoft Azure Service Bus 
 
-![Microsoft Azure Service Bus ](![image](https://github.com/user-attachments/assets/80377fcc-a3f1-4feb-a689-706ddbe51a4d)
+![Microsoft Azure Service Bus ](https://github.com/user-attachments/assets/80377fcc-a3f1-4feb-a689-706ddbe51a4d)
 
 IBM MQ
 
