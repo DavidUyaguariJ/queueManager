@@ -27,7 +27,8 @@ IBM MQ
 
 Microsoft Azure Service Bus 
 
-![Microsoft Azure Service Bus ]([https://www.cleo.com/sites/default/files/styles/desktop_664_394_scale/public/2023-12/ibm-mq-integration.png.webp?itok=N1UJAOh-](https://miro.medium.com/v2/resize:fit:720/format:webp/1*e51ULWb5-uDsqdw3ENTEsA.png))
+![Microsoft Azure Service Bus ](https://miro.medium.com/v2/resize:fit:4800/format:webp/1*e51ULWb5-uDsqdw3ENTEsA.png)
 
 Amazon SQS (Simple Queue Service)
-![Amazon SQS]([[https://www.cleo.com/sites/default/files/styles/desktop_664_394_scale/public/2023-12/ibm-mq-integration.png.webp?itok=N1UJAOh-](https://miro.medium.com/v2/resize:fit:720/format:webp/1*e51ULWb5-uDsqdw3ENTEsA.png)](https://media.licdn.com/dms/image/v2/C4D12AQEEWpvvLrlIEQ/article-cover_image-shrink_423_752/article-cover_image-shrink_423_752/0/1614619668865?e=1737590400&v=beta&t=VTv5pd3LyUq4MoLp0oheFopEpx_xrt24pdbLTi4unaY))
+
+![Amazon SQS](https://media.licdn.com/dms/image/v2/C4D12AQEEWpvvLrlIEQ/article-cover_image-shrink_423_752/article-cover_image-shrink_423_752/0/1614619668865?e=1737590400&v=beta&t=VTv5pd3LyUq4MoLp0oheFopEpx_xrt24pdbLTi4unaY)
