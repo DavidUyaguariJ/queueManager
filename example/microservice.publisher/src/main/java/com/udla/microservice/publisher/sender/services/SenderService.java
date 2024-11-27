@@ -18,6 +18,6 @@ public class SenderService {
 
     public void send(String message) {
         log.info("Sending message: {}", message);
-        this.publisher.send(message);
+        publisher.send(message);
     }
 }
