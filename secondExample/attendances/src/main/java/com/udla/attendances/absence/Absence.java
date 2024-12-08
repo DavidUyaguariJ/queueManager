@@ -16,5 +16,4 @@ public class Absence {
     public void justificationSuccess(AttendanceModel attendance) {
         log.info("Process Absence", attendance);
     }
-
 }
