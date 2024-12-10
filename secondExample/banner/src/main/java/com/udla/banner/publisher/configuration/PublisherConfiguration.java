@@ -18,10 +18,9 @@ import org.springframework.context.annotation.Configuration;
 public class PublisherConfiguration {
     public static String EXCHANGE_TOPIC = "banner.topic";
     public static String EXCHANGE_FANOUT = "banner.fanout";
-    public static String ROUTING_KEY_ATTENDANCE= "attendance.rounting.key";
-    public static String ROUTING_KEY_ABSENCES= "absences.rounting.key";
-    public static String QUEUE_ATTENDANCE = "attendance.queue";
-    public static String QUEUE_ABSENCES = "absences.queue";
+    public static String ROUTING_KEY= "share.*.attendance";
+    public static String QUEUE_ATTENDANCES = "attendances.queue";
+    public static String QUEUE_NOTIFICATIONS = "notifications.queue";
 
     /**
      * Configure the exchange
@@ -37,40 +36,34 @@ public class PublisherConfiguration {
     }
 
     @Bean
-    public Queue attendanceQueue() {
-        return new Queue(QUEUE_ATTENDANCE, true);
+    public Queue attendancesQueue() {
+        return new Queue(QUEUE_ATTENDANCES, true);
     }
 
     @Bean
-    public Queue absencesQueue() {
-        return new Queue(QUEUE_ABSENCES, true);
+    public Queue notificationsQueue() {
+        return new Queue(QUEUE_NOTIFICATIONS, true);
     }
     /**
      * Configure the binding with fanout exchange
     */
     @Bean
-    public Binding bindingAttendanceQueue(FanoutExchange fanoutExchange, Queue attendanceQueue) {
-        return BindingBuilder.bind(attendanceQueue).to(fanoutExchange);
+    public Binding bindingAttendancesQueue(FanoutExchange fanoutExchange, Queue attendancesQueue) {
+        return BindingBuilder.bind(attendancesQueue).to(fanoutExchange);
     }
 
     @Bean
-    public Binding bindingAbsencesQueue(FanoutExchange fanoutExchange, Queue absencesQueue) {
-        return BindingBuilder.bind(absencesQueue).to(fanoutExchange);
+    public Binding bindingNotificationsQueue(FanoutExchange fanoutExchange, Queue notificationsQueue) {
+        return BindingBuilder.bind(notificationsQueue).to(fanoutExchange);
     }
 
     /**
      * Configure the binding with topic exchange
     */
     @Bean
-    public Binding bindingAttendanceQueueTopic(TopicExchange exchange, Queue attendanceQueue) {
-        return BindingBuilder.bind(attendanceQueue).to(exchange).with(ROUTING_KEY_ATTENDANCE);
+    public Binding bindingAttendancesQueueTopic(TopicExchange exchange, Queue attendancesQueue) {
+        return BindingBuilder.bind(attendancesQueue).to(exchange).with(ROUTING_KEY);
     }
-
-    @Bean
-    public Binding bindingAbsencesQueueTopic(TopicExchange exchange, Queue absencesQueue) {
-        return BindingBuilder.bind(absencesQueue).to(exchange).with(ROUTING_KEY_ABSENCES);
-    }
-    
     /**
      * Configure to convert the object to json
     */

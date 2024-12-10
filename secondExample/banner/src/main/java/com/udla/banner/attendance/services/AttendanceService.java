@@ -4,7 +4,6 @@ import org.springframework.stereotype.Service;
 
 import com.udla.banner.attendance.models.AttendanceModel;
 import com.udla.banner.publisher.Publisher;
-import com.udla.banner.publisher.configuration.PublisherConfiguration;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -17,7 +16,7 @@ public class AttendanceService {
     private final Publisher publisher;
 
     public AttendanceModel registerAttendance(AttendanceModel attendance) {
-        this.publisher.sendTopicMessage(attendance, PublisherConfiguration.ROUTING_KEY_ATTENDANCE);
+        this.publisher.sendTopicMessage(attendance, "share.holaQueHace.attendance");
         return attendance;
     }
 
