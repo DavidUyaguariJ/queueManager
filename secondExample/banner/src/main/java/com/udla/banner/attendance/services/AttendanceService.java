@@ -16,7 +16,7 @@ public class AttendanceService {
     private final Publisher publisher;
 
     public AttendanceModel registerAttendance(AttendanceModel attendance) {
-        this.publisher.sendTopicMessage(attendance, "share.holaQueHace.attendance");
+        this.publisher.sendTopicMessage(attendance, "share.register.attendance");
         return attendance;
     }
 
