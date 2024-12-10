@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ConsumerConfiguration {
 
-    public static final String QUEUE_ABSENCES = "absences.queue";
+    public final static String QUEUE_ATTENDANCES = "attendances.queue";
 
     @Bean
     public MessageConverter messageConverter(){
