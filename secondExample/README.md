@@ -24,7 +24,7 @@ el uno encargado de registrar la perisistencia de la justificación y el segundo
 
 ### Como funcionan los exchanges
 
-![flujo de mensajes dentro de la solución](../images/MessagesProcessExample2.png)
+![flujo de mensajes dentro de la solución](../images/MessagesUseExample2.png)
 
 - Al consultar a la primera API /attendance/justify se genera un mensaje tipo Fanout lo que quiere decir que envía el mensaje a todas las colas vinculadas a ese exchange,
 por lo tanto se enviarán a ambos microservicios ya que es necesario notificar y gestionar la persistencia de la justificación de la inasistencia.
