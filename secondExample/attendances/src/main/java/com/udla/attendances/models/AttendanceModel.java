@@ -15,4 +15,5 @@ public class AttendanceModel {
     private String studentName;
     private String className;
     private String teacherName;
+    private String subject;
 }
